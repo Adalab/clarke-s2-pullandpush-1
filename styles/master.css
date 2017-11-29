@@ -1,3 +1,11 @@
+/* Clases comunes:
+h1= title;
+legend= form-title;
+label= sr.only;
+input= directamente input, sin clase;
+fieldset= directamete fieldset, sin clase; padding 20px, margin bottom 20px (por ejemplo)*/
+
+
 *{
   box-sizing: border-box;
 }
@@ -5,7 +13,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  background-image: ;
+  margin: 0;
 }
 
 
