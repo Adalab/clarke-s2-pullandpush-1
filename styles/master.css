@@ -1,3 +1,4 @@
+
 /*Las clases creadas son
 h1= .title
 legend= .form-title
@@ -5,6 +6,14 @@ labels= sr-only (para que cuando pose el cursor una persona invidente escuche lo
 nuestra versión no se vea
 los fieldset son son: .personal-data,.contact, .about you, .professional-experience
 footer= .footer-pullandpush)*/
+=======
+/* Clases comunes:
+h1= title;
+legend= form-title;
+label= sr.only;
+input= directamente input, sin clase;
+fieldset= directamete fieldset, sin clase; padding 20px, margin bottom 20px (por ejemplo)*/
+
 
 
 *{
@@ -15,7 +24,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 300;
-  }
+  margin: 0;
+}
 
 
 header {
