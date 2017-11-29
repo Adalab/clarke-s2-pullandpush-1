@@ -58,7 +58,9 @@ background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 }
 
+
 fieldset, textarea, input{
+background-color: white;
 border-style: none;
 }
 input {
