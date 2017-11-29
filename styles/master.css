@@ -6,7 +6,6 @@ labels= sr-only (para que cuando pose el cursor una persona invidente escuche lo
 nuestra versión no se vea
 los fieldset son son: .personal-data,.contact, .about you, .professional-experience
 footer= .footer-pullandpush)*/
-=======
 /* Clases comunes:
 h1= title;
 legend= form-title;
@@ -76,11 +75,13 @@ font-weight: bold;
 color: #60beb2;
 }
 
-input
 
+input {
+}
 
 
 .eye-header {
+
   -webkit-appearance: none;
   background-color: #3CDBC0;
   color: white;
