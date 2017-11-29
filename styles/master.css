@@ -6,7 +6,6 @@ labels= sr-only (para que cuando pose el cursor una persona invidente escuche lo
 nuestra versión no se vea
 los fieldset son son: .personal-data,.contact, .about you, .professional-experience
 footer= .footer-pullandpush)*/
-=======
 /* Clases comunes:
 h1= title;
 legend= form-title;
@@ -38,14 +37,34 @@ header {
   color: white;
   text-transform: uppercase;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
+.pullandpush-logo {
+width: 20%;
+height: auto;
 
+}
 
 .title {
 font-weight: 600;
 font-size: 18px;
 text-transform: uppercase;
 margin-top: 170px;
+}
+
+.form-section {
+background-image: url(../images/backgourd.svg);
+background-repeat: repeat;
+}
+
+
+fieldset, textarea, input{
+background-color: white;
+border-style: none;
+}
+input {
+border-bottom: 1px solid #a9a9a9;
 }
 
 .personal-data {
@@ -58,11 +77,17 @@ font-weight: bold;
 color: #60beb2;
 }
 
-input
 
+<<<<<<< HEAD
 .sr-only
+=======
+input {
+}
+
+>>>>>>> 5258f116c0dfbb894b69f7444c7a3d28d512ad20
 
 .eye-header {
+
   -webkit-appearance: none;
   background-color: #3CDBC0;
   color: white;
