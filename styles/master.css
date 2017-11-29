@@ -1,3 +1,12 @@
+/*Las clases creadas son
+h1= .title
+legend= .form-title
+labels= sr-only (para que cuando pose el cursor una persona invidente escuche lo que hay pero en
+nuestra versión no se vea
+los fieldset son son: .personal-data,.contact, .about you, .professional-experience
+footer= .footer-pullandpush)*/
+
+
 *{
   box-sizing: border-box;
 }
@@ -5,8 +14,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  background-image: ;
-}
+  font-weight: 300;
+  }
 
 
 header {
@@ -32,12 +41,18 @@ margin-top: 170px;
 .personal-data {
 
 }
+.form-title {
+text-transform: uppercase;
+font-size: 14px;
+font-weight: bold;
+color: #60beb2;
+}
+
+input
 
 
 
-
-
-input {
+.eye-header {
   -webkit-appearance: none;
   background-color: #3CDBC0;
   color: white;
