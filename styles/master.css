@@ -41,9 +41,13 @@ header {
   justify-content: space-between;
 }
 .pullandpush-logo {
+margin-left: 5%;
 width: 20%;
 height: auto;
-
+}
+.eye-logo {
+margin-right: 5%;
+-webkit-appearance: none;
 }
 
 .title {
@@ -54,6 +58,7 @@ margin-top: 170px;
 }
 
 .form-section {
+
 background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 }
@@ -84,14 +89,7 @@ input {
 
 .eye-header {
 
-  -webkit-appearance: none;
-  background-color: #3CDBC0;
-  color: white;
-  border-style: groove;
-  border-radius:4px;
-  position: absolute;
-  right: 0px;
-  bottom:0px;
+
 }
 
 .pdf-prev{
