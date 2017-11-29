@@ -38,14 +38,32 @@ header {
   color: white;
   text-transform: uppercase;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
+.pullandpush-logo {
+width: 20%;
+height: auto;
 
+}
 
 .title {
 font-weight: 600;
 font-size: 18px;
 text-transform: uppercase;
 margin-top: 170px;
+}
+
+.form-section {
+background-image: url(../images/backgourd.svg);
+background-repeat: repeat;
+}
+
+fieldset, textarea, input{
+border-style: none;
+}
+input {
+border-bottom: 1px solid #a9a9a9;
 }
 
 .personal-data {
