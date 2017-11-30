@@ -111,7 +111,7 @@ select {
 color: #60beb2;
 border-style: none;
 border-width: 1px;
-border-color: none;
+border-color: rgb(169, 169, 169)
 border-image: none;
 border-radius: 5px;
 }
