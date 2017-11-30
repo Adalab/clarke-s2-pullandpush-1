@@ -93,12 +93,20 @@ margin-top: 170px;
 .form-section {
 background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
+display: flex;
+flex-direction: column;
+padding: 30px 30px;
 }
 
 
+
+
 fieldset, textarea, input{
+top:-10px;
 background-color: white;
 border-style: none;
+width: 100%;
+
 }
 
 input {
@@ -122,10 +130,26 @@ text-transform: uppercase;
 font-size: 14px;
 font-weight: bold;
 color: #60beb2;
+
+padding-top: 50px;
+}
+
+.sr-only{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+
+width: 100%;
 }
 
 .professional-experience {
-  width: 20%;
   margin-left: 2px;
   margin-right: 2px;
   padding: 9px;
@@ -155,6 +179,7 @@ width: 100%;
 
 
 /* FOOTER */
+
 
 .footer-pullandpush {
   bottom: 0;
