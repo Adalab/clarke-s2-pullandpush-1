@@ -100,6 +100,14 @@ font-weight: bold;
 color: #60beb2;
 }
 
+
+.professional-experience {
+  width: 20%;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding: 9px;
+}
+
 .form-title2 {
   text-transform: uppercase;
   font-size: 12px;
@@ -108,14 +116,17 @@ color: #60beb2;
 }
 
 select {
-color: #60beb2;
-border-style: none;
+color: #797979;
+border-style:none;
+background-color: rgba(96,190,178,0.3);
 border-width: 1px;
-border-color: rgb(169, 169, 169)
+border-color: none;
 border-image: none;
-border-radius: 5px;
+border-style: none;
+border-radius: 3px;
 }
 }
+
 
 
 /* FOOTER */
