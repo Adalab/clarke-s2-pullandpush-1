@@ -2,16 +2,12 @@
 /*Las clases creadas son
 h1= .title
 legend= .form-title
+h2= .form-title2 (para subtitulos entre legend y label o entre labels, por ejemplo: TRABAJO 1, TRABAJO 2)
 labels= sr-only (para que cuando pose el cursor una persona invidente escuche lo que hay pero en
 nuestra versión no se vea
 los fieldset son son: .personal-data,.contact, .about you, .professional-experience
 footer= .footer-pullandpush)*/
-/* Clases comunes:
-h1= title;
-legend= form-title;
-label= sr.only;
-input= directamente input, sin clase;
-fieldset= directamete fieldset, sin clase; padding 20px, margin bottom 20px (por ejemplo)*/
+
 
 
 
@@ -25,6 +21,8 @@ body {
   font-weight: 300;
   margin: 0;
 }
+
+/*HEADER*/
 
 
 header {
@@ -40,12 +38,33 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .pullandpush-logo {
-margin-left: 5%;
 width: 20%;
 height: auto;
+
 }
 
+
+.eye-header {
+  -webkit-appearance: none;
+  background-color: #3CDBC0;
+  color: white;
+  border-style: groove;
+  border-radius:4px;
+  position: absolute;
+  right: 0px;
+  bottom:0px;
+}
+
+
+.pdf-prev{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+/*FORMULARIO*/
 
 .title {
 font-weight: 600;
@@ -55,7 +74,6 @@ margin-top: 170px;
 }
 
 .form-section {
-
 background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 }
@@ -65,8 +83,12 @@ fieldset, textarea, input{
 background-color: white;
 border-style: none;
 }
+
 input {
 border-bottom: 1px solid #a9a9a9;
+width: 100%;
+height: 35px;
+margin-bottom: 5%;
 }
 .eye-logo {
 margin-right: 5%;
@@ -77,6 +99,7 @@ margin-right: 5%;
 .personal-data {
 
 }
+
 .form-title {
 text-transform: uppercase;
 font-size: 14px;
@@ -88,16 +111,29 @@ color: #60beb2;
 
 
 
-.eye-header {
 
 
+.form-title2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #797979;
 }
 
-.pdf-prev{
-  display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
+select {
+color: #60beb2;
+border-style: none;
+border-width: 1px;
+border-color: rgb(169, 169, 169)
+border-image: none;
+border-radius: 5px;
 }
+}
+
+
+
+/* FOOTER */
+
 .footer-pullandpush {
   bottom: 0;
   left:0;
@@ -107,7 +143,7 @@ color: #60beb2;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   text-align: center;
   padding:0 ;
 color: white;
