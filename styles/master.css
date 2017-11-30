@@ -37,12 +37,29 @@ header {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+align-items: center;
 }
 
 .pullandpush-logo {
 width: 20%;
 height: auto;
 margin-left: 5%;
+}
+.eye {
+border-left: 1px solid white;
+padding-left: 5%;
+margin-right: 5%;
+width:12%;
+padding-top: 10px;
+}
+
+.eye-logo {
+width: 100%;
+margin-right: 5%;
+display: block;
+padding-bottom: 10px;
+
+
 }
 
 
@@ -92,7 +109,7 @@ margin-bottom: 5%;
 }
 .eye-logo {
 margin-right: 5%;
--webkit-appearance: none;
+;
 
 }
 
@@ -130,6 +147,10 @@ border-color: none;
 border-image: none;
 border-style: none;
 border-radius: 3px;
+}
+
+.about-you {
+width: 100%;
 }
 
 
