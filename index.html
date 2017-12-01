@@ -10,7 +10,9 @@
 <body>
   <header>
 <img class="pullandpush-logo" src="images/logo.svg" alt="logo de pull and push">
-    <input class="eye-logo"type="button" src="images/eye.svg" value="" alt="previsualizacion">
+    <div class="eye">
+      <img class="eye-logo" src="images/eye.svg"  alt="previsualizacion">
+    </div>
 </header>
 
 
@@ -48,7 +50,7 @@
     <fieldset>
       <legend class="form-title">extracto</legend>
 
-      <textarea name="about-you" rows="8" cols="80" placeholder="Sobre ti"></textarea>
+      <textarea name="about-you" rows="8" cols="" placeholder="Sobre ti"></textarea>
 
     </fieldset>
 
@@ -153,8 +155,12 @@
       <label class="sr-only"for="degree">Licenciatura o grado</label>
       <input id="degree" type="text" placeholder="Licenciatura/Grado" name="degree" value="">
 
+
       <label class="sr-only"for="university">Universidad/Escuela</label>
       <input id="university" type="text" placeholder="Universidad/Escuela" name="university" value="">
+
+        <textarea name="about-you" rows="8" cols="" placeholder="Descripción"></textarea>
+
 
       <div class="calendar">
         <label for="month">Desde</label>
@@ -318,7 +324,6 @@ content += '<option>' + year + '</option>'
 
 pruebaElem.innerHTML = content;
 </script>
-=======
 // var content = '';
 // var currentYear=2017;
 // for (var i = 0; i < array.length; i++) {
