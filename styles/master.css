@@ -95,7 +95,9 @@ background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 display: flex;
 flex-direction: column;
-padding: 30px 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 
@@ -117,9 +119,12 @@ margin-bottom: 5%;
 }
 .eye-logo {
 margin-right: 5%;
-;
-
 }
+.job-description textarea {
+  border-style: solid;
+  padding: 10px 10px;
+}
+
 
 .personal-data {
 
@@ -130,7 +135,6 @@ text-transform: uppercase;
 font-size: 14px;
 font-weight: bold;
 color: #60beb2;
-
 padding-top: 50px;
 }
 
@@ -173,8 +177,10 @@ border-style: none;
 border-radius: 3px;
 }
 
+
 .about-you {
 width: 100%;
+border: 10px;
 }
 
 
