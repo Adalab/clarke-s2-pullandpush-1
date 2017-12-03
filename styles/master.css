@@ -195,7 +195,171 @@ width: 100%;
 
 /* PREVIEW SECTION */
 
+.preview {
+  background-image: url(../images/backgourd.svg);
+  background-repeat: repeat;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 6px;
+  color: #1c1c1b;
+}
 
+.preview-a4 {
+  background-color: white;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+
+  /*Dos alternativas para fijar la altura padding o height*/
+  /*height: 454.054px;*/
+  padding-top: 454.054px;
+  position: relative;
+}
+
+.preview-content {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  /*Es nesesario sin en vez de height uso padding para definir la altura*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preview-header{
+  border-bottom: 1px solid #a9a9a9;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.preview-colum {
+  border-right: 1px solid #a9a9a9;
+  width: 30%;
+  text-align: right;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.preview-colum:last-child{
+  border-right: 0;
+  width: 70%;
+  text-align: left;
+}
+
+.js-name {
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #2c2c2c;
+}
+
+.js-career {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.preview-title {
+  font-size: 700;
+  text-transform: uppercase;
+  font-size: 8px;
+  margin: 0;
+}
+
+.preview-contact, .preview-education, .preview-languages, .preview-extract, .preview-jobs{
+  padding-bottom: 5px;
+}
+
+.preview-set {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.js-company, .js-language, .js-degree {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.js-position, .js-languagelvl, .js-institution {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.js-jobdata, .js-educationdate, .js-tel, .js-email{
+  font-weight: 300;
+  margin: 0;
+}
+
+.js-extract{
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.js-explanation {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+hr {
+    margin-bottom: 5px;
+    color: #a9a9a9;
+}
+
+/*prueba con ratio*/
+
+/*
+.preview {
+  background-image: url(../images/backgourd.svg);
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.preview-a4 {
+  background-color: white;
+  position: relative;
+  padding-top: 129.52%; /* Aspect Ratio */
+  /*position: relative;
+}*/
+/*.preview-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}*/
+/*.preview-a4 {
+  position: relative;
+}
+  .preview-a4:before {
+    background: white;
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 129.52%;
+  }
+  .preview-a4 > .preview-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }*/
 
 /* FOOTER */
 
