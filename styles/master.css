@@ -161,6 +161,8 @@ padding-top: 50px;
 
 .calendar {
   margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
@@ -184,6 +186,7 @@ border-bottom: 1px solid #a9a9a9;
 width: 100%;
 height: auto;
 margin-bottom: 5%;
+}
 
 .about-you {
 width: 100%;
