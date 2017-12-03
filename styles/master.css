@@ -58,8 +58,11 @@ width: 100%;
 margin-right: 5%;
 display: block;
 padding-bottom: 10px;
-
-
+background-color: transparent;
+border: none;
+}
+.hidden {
+display: none;
 }
 
 
