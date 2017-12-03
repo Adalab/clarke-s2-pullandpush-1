@@ -198,29 +198,29 @@ width: 100%;
 .preview {
   background-image: url(../images/backgourd.svg);
   background-repeat: repeat;
-  padding-top: 20px;
-  padding-bottom: 20px;
   font-size: 6px;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
   color: #1c1c1b;
 }
 
 .preview-a4 {
   background-color: white;
-  width: 320px;
+  width: 53.333em;
   margin-right: auto;
   margin-left: auto;
 
   /*Dos alternativas para fijar la altura padding o height*/
   /*height: 454.054px;*/
-  padding-top: 454.054px;
+  padding-top: 75.676em;
   position: relative;
 }
 
 .preview-content {
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-top: 3.5em;
+  padding-right: 3.5em;
+  padding-left: 3.5em;
+  padding-bottom: 3.5em;
   display: flex;
   flex-wrap: wrap;
 
@@ -236,19 +236,19 @@ width: 100%;
   border-bottom: 1px solid #a9a9a9;
   width: 100%;
   text-align: center;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
 }
 
 .preview-colum {
   border-right: 1px solid #a9a9a9;
   width: 30%;
   text-align: right;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-right: 10px;
-  padding-bottom: 5px;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
 }
 
 .preview-colum:last-child{
@@ -259,14 +259,14 @@ width: 100%;
 
 .js-name {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 4em;
   text-transform: uppercase;
   margin: 0;
   color: #2c2c2c;
 }
 
 .js-career {
-  font-size: 12px;
+  font-size: 2em;
   font-weight: 300;
   margin: 0;
 }
@@ -274,17 +274,18 @@ width: 100%;
 .preview-title {
   font-size: 700;
   text-transform: uppercase;
-  font-size: 8px;
+  font-size: 1.5em;
   margin: 0;
 }
 
 .preview-contact, .preview-education, .preview-languages, .preview-extract, .preview-jobs{
-  padding-bottom: 5px;
+  padding-bottom: 1em;
 }
 
-.preview-set {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.preview-set, .js-extract{
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .js-company, .js-language, .js-degree {
@@ -304,19 +305,13 @@ width: 100%;
   margin: 0;
 }
 
-.js-extract{
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 .js-explanation {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 1em;
 }
 
 hr {
-    margin-bottom: 5px;
+    margin-bottom: 1em;
     color: #a9a9a9;
 }
 
