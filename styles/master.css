@@ -317,46 +317,6 @@ hr {
     background-color: #a9a9a9;
 }
 
-/*prueba con ratio*/
-
-/*
-.preview {
-  background-image: url(../images/backgourd.svg);
-  background-repeat: repeat;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
-.preview-a4 {
-  background-color: white;
-  position: relative;
-  padding-top: 129.52%; /* Aspect Ratio */
-  /*position: relative;
-}*/
-/*.preview-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}*/
-/*.preview-a4 {
-  position: relative;
-}
-  .preview-a4:before {
-    background: white;
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: 129.52%;
-  }
-  .preview-a4 > .preview-content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }*/
 
 /* FOOTER */
 
