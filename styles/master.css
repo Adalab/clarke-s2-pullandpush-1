@@ -163,20 +163,26 @@ padding-top: 50px;
 }
 
 .calendar {
+  margin-top: 6px;
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-end;
+
+}
+
+.from-to {
+  margin-right: 3px;
+
 }
 
 
 select {
 color: #797979;
-border-style:none;
-background-color: rgba(96,190,178,0.3);
+border: solid;
+background-color: #ffffff;
 border-width: 1px;
-border-color: none;
+border-color: #60beb2;
 border-image: none;
-border-style: none;
 border-radius: 3px;
 }
 
