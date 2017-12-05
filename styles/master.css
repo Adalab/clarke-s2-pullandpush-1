@@ -98,7 +98,9 @@ background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 display: flex;
 flex-direction: column;
-padding: 30px 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 fieldset, textarea, input{
@@ -121,6 +123,11 @@ margin-bottom: 5%;
 .eye-logo {
 margin-right: 5%;
 }
+.job-description textarea {
+  border-style: solid;
+  padding: 10px 10px;
+}
+
 
 .description-into {
   border: 1px solid #a9a9a9;
@@ -193,6 +200,7 @@ margin-bottom: 5%;
 
 .about-you {
 width: 100%;
+border: 10px;
 }
 
 /* PREVIEW SECTION */

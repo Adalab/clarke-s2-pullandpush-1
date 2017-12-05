@@ -14,10 +14,103 @@
       <input class="eye-logo " type="image" name="" value="" src="images/eye.svg"  alt="previsualizacion">
       <input class="eye-logo hidden " type="image" name="" value="" src="images/eye-off.svg"  alt="cerrar previsualizacion">
     </div>
+</header>
+
+
+<main>
+
+<h1 class="title">Resume Maker</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+  <form class="form-section" action="index.html" method="post">
+
+    <fieldset class="personal-data">
+      <legend class="form-title">datos personales</legend>
+      <label class="sr-only"for="name">nombre</label>
+      <input id="name" type="text" placeholder="nombre" name="name" value="">
+
+      <label class="sr-only"for="last-name">apellidos</label>
+      <input id="last-name" type="text" placeholder="apellidos" name="last-name" value="">
+
+      <label class="sr-only"for="job">profesión</label>
+      <input id="job" type="text" placeholder="profesión" name="job" value="">
+    </fieldset>
+
+    <fieldset class="contact">
+      <legend class="form-title">contacto</legend>
+      <label class="sr-only"for="e-mail">e-mail</label>
+      <input id="e-mail" type="mail" placeholder="e-mail" name="e-mail" value="">
+
+      <label class="sr-only"for="telephone">teléfono</label>
+      <input id="telephone" type="tel" placeholder="teléfono" name="telephone" value="">
+
+
+    </fieldset>
+
+    <fieldset class="about-you">
+      <legend class="form-title">extracto</legend>
+
+      <textarea name="about-you" rows="8" cols="" placeholder="Sobre ti"></textarea>
+
+    </fieldset>
+
+
+    <fieldset class="professional-experience">
+
+      <legend class="form-title">Experiencia laboral</legend>
+      <h2 class= "form-title2">Trabajo 1</h2>
+      <label class="sr-only" for="position">Puesto</label>
+      <input id="position" type="text" placeholder="Puesto"name="position">
+
+      <label class="sr-only"for="company">Empresa</label>
+      <input id="company" type="text" placeholder="Empresa"name="company">
+
+      <div class="calendar">
+        <label for="month">Desde</label>
+        <select id="month" name="month">
+          <option>enero</option>
+          <option>febrero</option>
+          <option>marzo</option>
+          <option>abril</option>
+          <option>mayo</option>
+          <option>junio</option>
+          <option>julio</option>
+          <option>agosto</option>
+          <option>septiembre</option>
+          <option>octubre</option>
+          <option>noviembre</option>
+          <option>diciembre</option>
+        </select>
+
+        <label for="year"></label>
+        <select id="year" name="year">
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+          <option>2007</option>
+          <option>2006</option>
+          <option>2005</option>
+          <option>2004</option>
+          <option>2003</option>
+          <option>2002</option>
+          <option>2001</option>
+          <option>2000</option>
+
+        </select>
+      </div>
+
   </header>
 
-
-  <main>
+      <fieldset class="job-description">
+        <legend class="form-title"></legend>
 
     <h1 class="title">Resume Maker</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -160,7 +253,7 @@
         <label class="sr-only"for="university">Universidad/Escuela</label>
         <input id="university" type="text" placeholder="Universidad/Escuela" name="university" value="">
 
-        <textarea name="about-you" rows="8" cols="" placeholder="Descripción"></textarea>
+        <textarea name="description" rows="8" cols="" placeholder="Descripción"></textarea>
 
 
         <div class="calendar">
@@ -245,7 +338,7 @@
         </div>
       </fieldset>
 
-      <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
+        <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
 
       <fieldset>
         <legend class="form-title">Idiomas</legend>
@@ -396,64 +489,3 @@
 
 <!-- <script type="text/javascript">
 var pruebaElem = document.querySelector('#prueba'); -->
-
-
-
-
-<!--EJEMPLO DE ÁLEX PARA ANEXO JAVASCRIPT-->
-<script type="text/javascript">
-var pruebaElem = document.querySelector('#prueba');
-<script type="text/javascript">
-var pruebaElem = document.querySelector('#prueba');
-=======
-<!-- <script type="text/javascript">
-var pruebaElem = document.querySelector('#prueba');
-/* -->
-<!--
-<!--EJEMPLO DE ÁLEX PARA ANEXO JAVASCRIPT-->
-<!--
- <script type="text/javascript">
-var pruebaElem = document.querySelector('#prueba'); -->
-<!--Asignamos a la variable moodElement el elemento HTML
-que devuelve querySelector
--->
-/*
-currentMood valdrá el contenido nuestro elemeto selecionado,
-que es :(
-*/
-// var content = '';
-// var currentYear=2017;
-// for (var i = 0; i < array.length; i++) {
-//   array[i]
-// }
-//
-// content += '<option>' + year + '</option>'
-//
-// pruebaElem.innerHTML = content;
-// </script>
-
-// var content = '';
-// var currentYear=2017;
-// for (var i = 0; i < array.length; i++) {
-//   array[i]
-// }
-//
-// content += '<option>' + year + '</option>'
-//
-// pruebaElem.innerHTML = content;
-//
-/</script>
-//
-// // var content = '';
-// // var currentYear=2017;
-// // for (var i = 0; i < array.length; i++) {
-// //   array[i]
-// // }
-// //
-// // content += '<option>' + year + '</option>'
-// //
-// // pruebaElem.innerHTML = content;
-</script> -->
-
-
---->
