@@ -11,7 +11,7 @@
   <header>
 <img class="pullandpush-logo" src="images/logo.svg" alt="logo de pull and push">
     <div class="eye">
-      <input class="eye-logo " type="image" name="" value="" src="images/eye.svg"  alt="previsualizacion">
+      <input class="eye-logo  " type="image" name="" value="" src="images/eye.svg"  alt="previsualizacion" onclick="">
       <input class="eye-logo hidden " type="image" name="" value="" src="images/eye-off.svg"  alt="cerrar previsualizacion">
     </div>
 </header>
@@ -276,14 +276,32 @@
 <div id="prueba"></div> -->
 
 <footer class="footer-pullandpush">
-<p class="thanks">Esta web ha sido psible<br>
+<p class="thanks">Esta web ha sido posible<br>
   gracias a</p>
     <img class="logo-adalab"src="images/logo_adalab_80px.png" alt="logo de Adalab">
       <!-- <a  class="footer-a" href="http://adalab.es/"> -->
       <p class="atribution"><span>2017 c&copy;  pull&amp;push</span> frog company</p>
 </footer>
 
+<!-- //función para abrir el desplegable
+function editar(idContent){
+	document.getElementById(idContent).style.display = 'block';
+}
+//función para cerrar sección
+function ocultar(idContent){
+	document.getElementById(idContent).style.display = 'none';
+} -->
+<!-- function mostrarOcultar(item){
+	var element = document.getElementById(item);
+	var boxfield = document.querySelectorAll('.boxfield');
+	// Eliminamos la clase active a todos los elementos
+	for (var i = 0; i < boxfield.length; i++) {
+			boxfield[i].classList.remove('active');
+	}
+	// añado active al elemento seleccionado
+	element.classList.add('active');
 
+} -->
 <!-- <script type="text/javascript">
 var pruebaElem = document.querySelector('#prueba'); -->
 
@@ -293,6 +311,25 @@ var pruebaElem = document.querySelector('#prueba'); -->
 var pruebaElem = document.querySelector('#prueba');
 /* -->
 <!--
+
+<!-ojo on- ojo off
+var activableSection = document.querySelector('.activable-section');
+
+// Si contiene la clase hidden
+if (activableSection.classList.contains('hidden')) {
+  // Elimina la clase
+  activableSection.classList.remove('hidden');
+} else { // Sino
+  // Añade la clase hidden
+  activableSection.classList.add('hidden');
+}-  -->
+
+<!--OTRA FORMA
+ ojo on- ojo off
+var activableSection = document.querySelector('.activable-section');
+
+// Si contiene la clase hidden la elimina y sino la añade
+activableSection.classList.toggle('hidden'); -->
 
 
 
@@ -349,6 +386,19 @@ que es :(
 // //
 // // pruebaElem.innerHTML = content;
 </script> -->
+
+<!-- Para hacer el evento onclick quiero que cuando picnhe se cambien las clases entre los dos inputs del header
+// añadir una clase
+document.getElementById("boton").classList.add('clase_css');
+
+// eliminar la clase indicada
+document.getElementById("boton").classList.remove('clase_css');
+
+// comprobar si el elemento contiene esa clase
+if ( document.getElementById("boton").classList.contains('clase_css') )
+
+// añadir clase si no existía; eliminarla si ya existía
+document.getElementById("boton").classList.toggle('clase_css'); -->
 
 
 

@@ -111,6 +111,7 @@ font-size: 12px;
 font-weight: 300;
 }
 
+
 input {
 border-bottom: 1px solid #a9a9a9;
 width: 100%;
@@ -130,10 +131,10 @@ margin-right: 5%;
   font-family: 'Open Sans', sans-serif;
 }
 
-.eye-logo {
+/*.eye-logo {
 margin-right: 5%;
 -webkit-appearance: none;
-}
+}*/
 
 .form-title {
 text-transform: uppercase;
@@ -164,6 +165,8 @@ padding-top: 50px;
 
 .calendar {
   margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 
@@ -198,6 +201,9 @@ width: 100%;
 
 
 .footer-pullandpush {
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
   bottom: 0;
   left:0;
   background-color: #193333;
@@ -220,6 +226,9 @@ align-items: center;
 margin-bottom: 0;
 }
 .logo-adalab {
+/*display: block;
+margin-left: auto;
+margin-right: auto;*/
 width: 33%;
 margin-left:33%;
 justify-content: center;
