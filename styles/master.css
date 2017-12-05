@@ -98,7 +98,9 @@ background-image: url(../images/backgourd.svg);
 background-repeat: repeat;
 display: flex;
 flex-direction: column;
-padding: 30px 30px;
+padding-bottom: 30px;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 fieldset, textarea, input{
@@ -121,6 +123,11 @@ margin-bottom: 5%;
 .eye-logo {
 margin-right: 5%;
 }
+.job-description textarea {
+  border-style: solid;
+  padding: 10px 10px;
+}
+
 
 .description-into {
   border: 1px solid #a9a9a9;
@@ -199,6 +206,131 @@ margin-bottom: 5%;
 
 .about-you {
 width: 100%;
+border: 10px;
+}
+
+/* PREVIEW SECTION */
+
+.preview {
+  background-image: url(../images/backgourd.svg);
+  background-repeat: repeat;
+  font-size: 6px;
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+  color: #1c1c1b;
+}
+
+.preview-a4 {
+  background-color: white;
+  width: 53.333em;
+  margin-right: auto;
+  margin-left: auto;
+
+  /*Dos alternativas para fijar la altura padding o height*/
+  /*height: 454.054px;*/
+  padding-top: 75.676em;
+  position: relative;
+}
+
+.preview-content {
+  padding-top: 3.5em;
+  padding-right: 3.5em;
+  padding-left: 3.5em;
+  padding-bottom: 3.5em;
+  display: flex;
+  flex-wrap: wrap;
+
+  /*Es nesesario sin en vez de height uso padding para definir la altura*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preview-header{
+  border-bottom: 1px solid #a9a9a9;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2.5em;
+}
+
+.preview-colum {
+  border-right: 1px solid #a9a9a9;
+  width: 30%;
+  text-align: right;
+  padding-left: 1.5em;
+  padding-top: 1em;
+  padding-right: 1.5em;
+  padding-bottom: 1em;
+}
+
+.preview-colum:last-child{
+  border-right: 0;
+  width: 70%;
+  text-align: left;
+}
+
+.js-name {
+  font-weight: 600;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #2c2c2c;
+}
+
+.js-career {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.preview-title {
+  font-size: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.preview-contact, .preview-education, .preview-languages, .preview-extract, .preview-jobs{
+  padding-bottom: 1em;
+}
+
+.preview-set, .js-extract{
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.js-company, .js-language, .js-degree {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.js-position, .js-languagelvl, .js-institution {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.js-jobdata, .js-educationdate, .js-tel, .js-email{
+  font-weight: 300;
+  margin: 0;
+}
+
+.js-explanation {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+hr {
+    margin-bottom: 1em;
+    height: 1px;
+    border: 0;
+    background-color: #a9a9a9;
 }
 
 
@@ -241,4 +373,20 @@ justify-content: center;
 
 span  {
 font-weight: 600;
+}
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width:768px){
+  .preview {
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width:920px){
+
+}
+
+@media all and (min-width:1024px){
 }
