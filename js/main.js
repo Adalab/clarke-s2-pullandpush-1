@@ -1,15 +1,18 @@
 'use strict';
 
-var activateSection = document.querySelector('.eye-logo');
 
-activateSection.addEventListener('click', asignClass);
-function asignClass() {
-  if (activateSection.classList.contains('eye-logo')); {
-      if (activateSection.classList.contains('hidden')); {
-          activateSection.classList.remove('hidden');
-        }
-else {
-    activateSection.classList.add('hidden');
-  }
-}
-}
+ var toggle = function(){
+document.querySelectorAll('.eye-logo').forEach(function(input){
+if (input.classList.contains('hidden'))
+input.classList.remove('hidden');
+else
+input.classList.add('hidden');
+  });
+
+};
+window.onload = function (){
+document.querySelectorAll('.eye-logo').forEach(function (input) {
+input.addEventListener('click', toggle);
+
+});
+};
