@@ -1,16 +1,19 @@
 'use strict';
+
+function toggleInput(target){
+  if (target.classList.contains('hidden'))
+  target.classList.remove('hidden');
+  // aside.classList.remove('hidden');
+  else
+  target.classList.add('hidden');
+  // aside.classList.add('hidden');
+}
  //
  // con este evento se activa o desactiva el ojo
 var toggle = function(){
-  document.querySelectorAll('.eye-logo').forEach(function(input){
-    if (input.classList.contains('hidden'))
-    input.classList.remove('hidden');
-    // aside.classList.remove('hidden');
-    else
-    input.classList.add('hidden');
-    // aside.classList.add('hidden');
-  });
-
+  document.querySelectorAll('.eye-logo').forEach(toggleInput);
+  var aside = document.querySelector('.preview');
+  toggleInput(aside);
 };
 window.onload = function (){
   document.querySelectorAll('.eye-logo').forEach(function (input) {
