@@ -250,6 +250,7 @@ border: 10px;
   padding-top: 1em;
   padding-right: 1.5em;
   padding-bottom: 1em;
+  height: 80%;
 }
 
 .preview-colum:last-child{
@@ -258,7 +259,7 @@ border: 10px;
   text-align: left;
 }
 
-.js-name {
+.js-fullName {
   font-weight: 600;
   font-size: 4em;
   text-transform: uppercase;
@@ -266,7 +267,7 @@ border: 10px;
   color: #2c2c2c;
 }
 
-.js-career {
+.js-job {
   font-size: 2em;
   font-weight: 300;
   margin: 0;
