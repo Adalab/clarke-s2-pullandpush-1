@@ -14,6 +14,8 @@ var toggle = function(){
   document.querySelectorAll('.eye-logo').forEach(toggleInput);
   var aside = document.querySelector('.preview');
   toggleInput(aside);
+  var main = document.querySelector('main');
+toggleInput(main);
 };
 window.onload = function (){
   document.querySelectorAll('.eye-logo').forEach(function (input) {
