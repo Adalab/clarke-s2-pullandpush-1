@@ -40,7 +40,7 @@ jobExperience.onchange = function(event) {
   }
 };
 
-
+//mover arriba
 var upButtonList = document.querySelectorAll('.up');
 for (var i = 0; i < upButtonList.length; i++) {
   upButtonList[i].onclick = function (event){
@@ -53,14 +53,32 @@ for (var i = 0; i < upButtonList.length; i++) {
   }
 }
 
+//mover abajo
 var downButtonList = document.querySelectorAll('.down');
 for (var i = 0; i < downButtonList.length; i++) {
-  downButtonList[i].onclick = function (event){
+  downButtonList[i].onclick = function (event) {
     var clickedJob = event.target.parentElement;
     var nextJob = clickedJob.nextElementSibling;
     if (nextJob.className === 'job-entry') {
       jobExperience.insertBefore(clickedJob, nextJob.nextSibling);
       jobExperience.onchange();
     }
+  }
+}
+
+//borrar
+var deleteButton = document.querySelectorAll('.delete');
+for (var i = 0; i < deleteButton.length; i++) {
+  deleteButton[i].onclick =function (event) {
+    var clickedJob = event.target.parentElement;
+    var aJob = clickedJob.querySelector('.position');
+    aJob.value = '';
+
+    var aJob = clickedJob.querySelector('.company');
+    aJob.value = '';
+
+    var aJob = clickedJob.querySelector('.description-into');
+    aJob.value = '';
+    jobExperience.onchange();
   }
 }
