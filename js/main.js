@@ -24,6 +24,20 @@ window.onload = function (){
   });
 };
 
+
+  var fieldset = document.querySelectorAll('.form-title');
+function showFieldset(event) {
+  var idFieldset = event.currentTarget.getAttribute('data-id');
+  var tab = document.querySelectorAll('.tab');
+  tab[idFieldset].classList.toggle('hidden');
+}
+
+// var editButton = document.querySelectorAll('.edit-button');
+for (var i = 0; i < fieldset.length; i++) {
+  fieldset[i].addEventListener('click', showFieldset);
+};
+
+
 // var showLegend = document.querySelectorAll('.form-tittle');
 // var collapseTab = document.querySelectorAll('.tab');
 // var id = event.currentTarget.getAttribute('data-id');
@@ -41,19 +55,6 @@ window.onload = function (){
 //   for (var id = 0; id < showLegend.length; id++) {
 //     showLegend[id].addEventListener('click', showFieldset);
 //   }
-
-  var fieldset = document.querySelectorAll('.form-title');
-function showFieldset(event) {
-  var idFieldset = event.currentTarget.getAttribute('data-id');
-  var tab = document.querySelectorAll('.tab');
-  tab[idFieldset].classList.toggle('hidden');
-}
-
-// var editButton = document.querySelectorAll('.edit-button');
-for (var i = 0; i < fieldset.length; i++) {
-  fieldset[i].addEventListener('click', showFieldset);
-};
-
 //
 // window.onload = function (){
 // document.querySelectorAll('.form-title').forEach(function (div) {
