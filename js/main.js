@@ -82,3 +82,40 @@ for (var i = 0; i < deleteButton.length; i++) {
     jobExperience.onchange();
   }
 }
+
+function toggleInput(target){
+  if (target.classList.contains('hidden'))
+  target.classList.remove('hidden');
+  // aside.classList.remove('hidden');
+  else
+  target.classList.add('hidden');
+  // aside.classList.add('hidden');
+}
+ //
+ // con este evento se activa o desactiva el ojo
+var toggle = function(){
+  document.querySelectorAll('.eye-logo').forEach(toggleInput);
+  var aside = document.querySelector('.preview');
+  toggleInput(aside);
+  var main = document.querySelector('main');
+toggleInput(main);
+};
+window.onload = function (){
+  document.querySelectorAll('.eye-logo').forEach(function (input) {
+    input.addEventListener('click', toggle);
+
+  });
+};
+
+
+  var fieldset = document.querySelectorAll('.form-title');
+function showFieldset(event) {
+  var idFieldset = event.currentTarget.getAttribute('data-id');
+  var tab = document.querySelectorAll('.tab');
+  tab[idFieldset].classList.toggle('hidden');
+}
+
+// var editButton = document.querySelectorAll('.edit-button');
+for (var i = 0; i < fieldset.length; i++) {
+  fieldset[i].addEventListener('click', showFieldset);
+};

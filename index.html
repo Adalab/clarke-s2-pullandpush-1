@@ -28,7 +28,10 @@
   <form class="form-section" action="index.html" method="post">
 
     <fieldset class="personal-data">
-      <legend class="form-title">datos personales</legend>
+      <legend data-id="0" class="form-title">datos personales</legend>
+
+ <div  class="tab hidden">
+
       <label class="sr-only"for="name">nombre</label>
       <input id="name" type="text" placeholder="nombre" name="name" value="">
 
@@ -37,30 +40,39 @@
 
       <label class="sr-only"for="job">profesión</label>
       <input id="job" type="text" placeholder="profesión" name="job" value="">
+</div>
     </fieldset>
 
     <fieldset class="contact">
-      <legend class="form-title">contacto</legend>
+      <legend data-id= "1" class="form-title">contacto</legend>
+
+<div class="tab hidden">
+
+
       <label class="sr-only"for="e-mail">e-mail</label>
       <input id="e-mail" type="mail" placeholder="e-mail" name="e-mail" value="">
 
       <label class="sr-only"for="telephone">teléfono</label>
       <input id="telephone" type="tel" placeholder="teléfono" name="telephone" value="">
 
-
+</div>
     </fieldset>
 
     <fieldset class="about-you">
-      <legend class="form-title">extracto</legend>
+      <legend data-id="2" class="form-title">extracto</legend>
+<div class="tab hidden">
+
 
       <textarea name="about-you" rows="8" cols="" placeholder="Sobre ti"></textarea>
-
+</div>
     </fieldset>
 
 
 
     <fieldset class="job-experience">
-      <legend class="form-title">Experiencia laboral</legend>
+      <legend data-id= "3" class="form-title">Experiencia laboral</legend>
+<div class="tab hidden">
+
 
       <div class="job-entry">
         <h2 class="form-title2">Trabajo 1</h2>
@@ -185,11 +197,15 @@
         <button class="down" type="button" name="down">▼</button>
         <button class="delete" type="button" name="Delete">Borrar</button>
       </div>
+</div>
     </fieldset>
 
 
       <fieldset>
-        <legend class="form-title">Estudios</legend>
+        <legend data-id="4" class="form-title">Estudios</legend>
+<div class="tab hidden">
+
+
         <label class="sr-only"for="degree">Licenciatura o grado</label>
         <input id="degree" type="text" placeholder="Licenciatura/Grado" name="degree" value="">
 
@@ -280,12 +296,16 @@
             <option>2000</option>
           </select>
         </div>
+</div>
       </fieldset>
 
         <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
 
       <fieldset>
-        <legend class="form-title">Idiomas</legend>
+        <legend data-id="5" class="form-title">Idiomas</legend>
+<div class="tab hidden">
+
+
         <label class="sr-only" for="languages">Idioma</label>
         <input type="text" id="languages" name="languages" placeholder="Idioma 1">
 
@@ -306,6 +326,7 @@
           <input id="basic" class="buttom-languages-levels" type="radio" name="basic" placeholder="básico">
 
         </div>
+</div>
       </fieldset>
 
     </form>
@@ -314,7 +335,7 @@
 
 <!-- PREVIEW SECTION - DIANA -->
 
-  <aside class="preview">
+  <aside class="preview hidden">
     <div class="preview-a4">
       <div class="preview-content">
 
