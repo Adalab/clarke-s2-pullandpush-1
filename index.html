@@ -82,7 +82,28 @@
         <input class="company" id="company-1" type="text" name="company-1" placeholder="Empresa">
 
         <div class="calendar">
-         <label for="month" class="from-to">Desde</label>
+          <label for="month" class="from-to">Desde</label>
+          <select id="month" class="selector-month" name="month">
+
+          </select>
+
+          <label for="year" class="from-to"></label>
+          <select id="year" class="selector-year" name="year">
+
+          </select>
+        </div>
+
+        <div class="calendar">
+          <label for="month" class="from-to">Hasta</label>
+          <select id="month" class="selector-month" name="month">
+
+          </select>
+
+          <label for="year" class="from-to"></label>
+          <select id="year" class="selector-year" name="year">
+            </select>
+
+         <!-- <label for="month" class="from-to">Desde</label>
          <select id="month" name="month">
            <option>enero</option>
            <option>febrero</option>
@@ -158,7 +179,7 @@
            <option>2002</option>
            <option>2001</option>
            <option>2000</option>
-         </select>
+         </select> -->
          </div>
 
         <textarea class="description-into" name="description-into-1" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
@@ -182,7 +203,6 @@
         <button class="down" type="button" name="down">▼</button>
         <button class="delete" type="button" name="Delete">Borrar</button>
       </div>
-
 
       <div class="job-entry">
         <h2 class="form-title2">Trabajo 3</h2>
@@ -218,82 +238,26 @@
 
         <div class="calendar">
           <label for="month" class="from-to">Desde</label>
-          <select id="month" name="month">
-            <option>enero</option>
-            <option>febrero</option>
-            <option>marzo</option>
-            <option>abril</option>
-            <option>mayo</option>
-            <option>junio</option>
-            <option>julio</option>
-            <option>agosto</option>
-            <option>septiembre</option>
-            <option>octubre</option>
-            <option>noviembre</option>
-            <option>diciembre</option>
+          <select id="month" class="selector-month" name="month">
+
           </select>
 
           <label for="year" class="from-to"></label>
-          <select id="year" name="year">
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-            <option>2012</option>
-            <option>2011</option>
-            <option>2010</option>
-            <option>2009</option>
-            <option>2008</option>
-            <option>2007</option>
-            <option>2006</option>
-            <option>2005</option>
-            <option>2004</option>
-            <option>2003</option>
-            <option>2002</option>
-            <option>2001</option>
-            <option>2000</option>
+          <select id="year" class="selector-year" name="year">
+
 
           </select>
         </div>
 
         <div class="calendar">
           <label for="month" class="from-to">Hasta</label>
-          <select id="month" name="month">
-            <option>enero</option>
-            <option>febrero</option>
-            <option>marzo</option>
-            <option>abril</option>
-            <option>mayo</option>
-            <option>junio</option>
-            <option>julio</option>
-            <option>agosto</option>
-            <option>septiembre</option>
-            <option>octubre</option>
-            <option>noviembre</option>
-            <option>diciembre</option>
+          <select id="month" class="selector-month" name="month">
+
           </select>
 
           <label for="year" class="from-to"></label>
-          <select id="year" name="year">
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-            <option>2012</option>
-            <option>2011</option>
-            <option>2010</option>
-            <option>2009</option>
-            <option>2008</option>
-            <option>2007</option>
-            <option>2006</option>
-            <option>2005</option>
-            <option>2004</option>
-            <option>2003</option>
-            <option>2002</option>
-            <option>2001</option>
-            <option>2000</option>
+          <select id="year" class="selector-year" name="year">
+
           </select>
         </div>
 </div>
@@ -445,7 +409,7 @@
   <!--<div id="prueba"></div> -->
 
   <footer class="footer-pullandpush">
-    <p class="thanks">Esta web ha sido posible, gracias a</p>
+    <p class="thanks">Esta web ha sido posible gracias a</p>
     <a target="_blank" href="http://adalab.es/"><img class="adalab" src="images/adalab.png" alt="Adalab"></a>
     <p class="atribution"><span>2017© pull&amp;push</span> frog company</p>
   </footer>

@@ -1,6 +1,7 @@
 "use strict";
 
 
+
 // HACKS
 // Estos permite usar enter y ademas evita el submit que recarga la pagina, ya que paro lo que el evento va ejecutar por defecto.
 document.onsubmit = function(event) {
@@ -120,3 +121,48 @@ function showFieldset(event) {
 for (var i = 0; i < fieldset.length; i++) {
   fieldset[i].addEventListener('click', showFieldset);
 };
+
+/*JAVASCRIPT MARÍA*/
+
+
+//MESES
+var monthOption= ['','enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+var acumuladorMonths= '';
+
+for (var i= 0; i <= monthOption.length; i++) {
+acumuladorMonths= acumuladorMonths + '<option>'+ monthOption[i] + '</option>';
+  }
+
+var selectorMonth= document.querySelectorAll('.selector-month');
+for (var i = 0; i < selectorMonth.length; i++){
+  selectorMonth[i].innerHTML= acumuladorMonths;
+}
+
+
+//AÑOS
+
+var selectorYears = document.querySelectorAll('.selector-year');
+var acumuladorYears= '';
+var currentYear= 1950;
+var firstYear= 2017;
+
+
+for (var i= firstYear; i >= currentYear; i--) {
+  acumuladorYears= acumuladorYears + '<option>'+ i + '</option>'
+}
+
+  for (var i = 0; i < selectorYears.length; i++){
+    selectorYears[i].innerHTML= acumuladorYears;
+  }
+
+  // //Cuando el usuario elige el mes en la lista de meses, ese mes tiene que incluirse en el PDF
+  //
+  // var jobExperience= document.querySelectorAll('.job-experience');
+  // jobExperience.onchange= function(event) {
+  // var allMonth= document.querySelectorAll('.selector-month');
+  // var reviewCalendar= document.querySelectorAll('.preview-job-set');
+  // for (var i = 0; i < allMonth.length; i++) {
+  //   var allSelectMonth= allMonth[i].querySelector('.js-jobdata');
+  //   allSelectMonth.innerHTML=
+  // }
+  // }
