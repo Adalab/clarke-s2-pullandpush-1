@@ -10,11 +10,28 @@ document.onsubmit = function(event) {
 
 // PERSONAL DATA
 var personalData = document.querySelector('.personal-data');
-personalData.onchange = function(event) {
+// personalData.onchange = function(event) {
+personalData.addEventListener('change',function(event){
   var targetField = document.querySelector('.js-' + event.target.name);
   targetField.innerHTML = event.target.value;
-};
+});
 
+// CONTACT-IRENE
+var contact = document.querySelector('.contact');
+contact.addEventListener('change',function(event){
+
+  var targetField = document.querySelector('.js-' + event.target.name);
+  targetField.innerHTML = event.target.value;
+});
+
+
+//ABOUT-YOU
+
+var aboutYou=document.querySelector('.about-you');
+contact.addEventListener('change',function(event){
+  var targetField = document.querySelector('.js-' + event.target.name);
+  targetField.innerHTML = event.target.value;
+});
 
 // EXPERIENCE
 var jobExperience = document.querySelector('.job-experience');
