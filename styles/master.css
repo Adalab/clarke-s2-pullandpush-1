@@ -9,8 +9,6 @@ los fieldset son son: .personal-data,.contact, .about you, .professional-experie
 footer= .footer-pullandpush)*/
 
 
-
-
 *{
   box-sizing: border-box;
 }
@@ -24,59 +22,51 @@ body {
 
 /*HEADER*/
 
-
 header {
   width: 100%;
-  height: 120px;
   top:0;
   left:0;
   position: fixed;
   background-color: #60beb2;
   color: white;
-  text-transform: uppercase;
   z-index: 1;
   display: flex;
   justify-content: space-between;
-align-items: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 
 .pullandpush-logo {
-width: 20%;
-height: auto;
-margin-left: 5%;
+  display: block;
+  height: 2.5em;
 }
+
+.pullandpush-logo {
+  width: 20%;
+  height: auto;
+  margin-left: 5%;
+}
+
 .eye {
-border-left: 1px solid white;
-padding-left: 5%;
-margin-right: 5%;
-width:12%;
-padding-top: 10px;
+  border-left: 1px solid white;
+  padding-left: 1em;
+  height: 2.5em;
 }
 
 .eye-logo {
-width: 100%;
-margin-right: 5%;
-display: block;
-padding-bottom: 10px;
-background-color: transparent;
-border: none;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  height: 2.5em;
 }
+
 .hidden {
-display: none;
+  display: none;
 }
-
-
-.eye-header {
-  -webkit-appearance: none;
-  background-color: #3CDBC0;
-  color: white;
-  border-style: groove;
-  border-radius:4px;
-  position: absolute;
-  right: 0px;
-  bottom:0px;
-}
-
 
 .pdf-prev{
   display: flex;
@@ -84,46 +74,52 @@ display: none;
   text-decoration: none;
 }
 
-/*FORMULARIO*/
+/*MAIN*/
 
-.title {
-font-weight: 600;
-font-size: 18px;
-text-transform: uppercase;
-margin-top: 170px;
+
+.WhatIsThis {
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 4.5em;
+}
+
+/*FORMULARIO*/
+
 .form-section {
-background-image: url(../images/backgourd.svg);
-background-repeat: repeat;
-display: flex;
-flex-direction: column;
-padding-bottom: 30px;
-padding-left: 30px;
-padding-right: 30px;
+  background-image: url(../images/backgourd.svg);
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 fieldset, textarea, input{
-top:-10px;
-background-color: white;
-border-style: none;
-width: 100%;
-font-family: 'Open Sans', sans-serif;
-font-size: 12px;
-font-weight: 300;
+  top:-10px;
+  background-color: white;
+  border-style: none;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 
 input {
-border-bottom: 1px solid #a9a9a9;
-width: 100%;
-height: 35px;
-margin-bottom: 5%;
+  border-bottom: 1px solid #a9a9a9;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 5%;
 }
 
-.eye-logo {
-margin-right: 5%;
-}
 .job-description textarea {
   border-style: solid;
   padding: 10px 10px;
@@ -144,11 +140,11 @@ margin-right: 5%;
 }*/
 
 .form-title {
-text-transform: uppercase;
-font-size: 14px;
-font-weight: bold;
-color: #60beb2;
-padding-top: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #60beb2;
+  padding-top: 50px;
 }
 
 .sr-only{
@@ -183,13 +179,13 @@ padding-top: 50px;
 
 
 select {
-color: #797979;
-border: solid;
-background-color: #ffffff;
-border-width: 1px;
-border-color: #60beb2;
-border-image: none;
-border-radius: 3px;
+  color: #797979;
+  border: solid;
+  background-color: #ffffff;
+  border-width: 1px;
+  border-color: #60beb2;
+  border-image: none;
+  border-radius: 3px;
 }
 
 .languages-levels {
@@ -197,15 +193,15 @@ border-radius: 3px;
   flex-direction: row;
 }
 .buttom-languages-levels {
-border-bottom: 1px solid #a9a9a9;
-width: 100%;
-height: auto;
-margin-bottom: 5%;
+  border-bottom: 1px solid #a9a9a9;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
 }
 
 .about-you {
-width: 100%;
-border: 10px;
+  width: 100%;
+  border: 10px;
 }
 
 /* PREVIEW SECTION */
@@ -217,6 +213,7 @@ border: 10px;
   padding-top: 3.5em;
   padding-bottom: 3.5em;
   color: #1c1c1b;
+  margin-top: 4.5em;
 }
 
 .preview-a4 {
@@ -224,9 +221,6 @@ border: 10px;
   width: 53.333em;
   margin-right: auto;
   margin-left: auto;
-
-  /*Dos alternativas para fijar la altura padding o height*/
-  /*height: 454.054px;*/
   padding-top: 75.676em;
   position: relative;
 }
@@ -238,8 +232,6 @@ border: 10px;
   padding-bottom: 3.5em;
   display: flex;
   flex-wrap: wrap;
-
-  /*Es nesesario sin en vez de height uso padding para definir la altura*/
   position: absolute;
   top: 0;
   left: 0;
@@ -264,6 +256,7 @@ border: 10px;
   padding-top: 1em;
   padding-right: 1.5em;
   padding-bottom: 1em;
+  height: 80%;
 }
 
 .preview-colum:last-child{
@@ -272,7 +265,7 @@ border: 10px;
   text-align: left;
 }
 
-.js-name {
+.js-fullName {
   font-weight: 600;
   font-size: 4em;
   text-transform: uppercase;
@@ -280,7 +273,7 @@ border: 10px;
   color: #2c2c2c;
 }
 
-.js-career {
+.js-job {
   font-size: 2em;
   font-weight: 300;
   margin: 0;
@@ -325,11 +318,12 @@ border: 10px;
   padding-bottom: 1em;
 }
 
-hr {
-    margin-bottom: 1em;
-    height: 1px;
-    border: 0;
-    background-color: #a9a9a9;
+
+.line {
+  margin-bottom: 1em;
+  height: 1px;
+  border: 0;
+  background-color: #a9a9a9;
 }
 
 
@@ -337,47 +331,43 @@ hr {
 
 
 .footer-pullandpush {
-  /*display: block;
-  margin-left: auto;
-  margin-right: auto;*/
-  bottom: 0;
-  left:0;
   background-color: #193333;
   width: 100%;
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  padding:0 ;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
-  align-content: space-between;
 }
+
 .thanks {
-font-size: 12px;
-font-weight: 500;
-justify-content: center;
-align-items: center;
-  margin-top: 5%;
-margin-bottom: 0;
+
+  font-size: 12px;
+  font-weight: 500;
 }
-.logo-adalab {
+/*.logo-adalab {
 /*display: block;
 margin-left: auto;
 margin-right: auto;*/
-width: 33%;
+/*width: 33%;
 margin-left:33%;
 justify-content: center;
+
+}*/
+
+.adalab {
+  height: 4em;
 }
+
 .atribution {
-font-weight: 500;
-font-size: 8px;
-text-transform: uppercase;
-justify-content: center;
+
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 8px;
+  text-transform: uppercase;
 }
 
 span  {
-font-weight: 600;
+  font-weight: 600;
 }
 
 
