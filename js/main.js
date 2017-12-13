@@ -27,7 +27,7 @@ contact.addEventListener('change',function(event){
 
 //ABOUT-YOU
 
-var aboutYou=document.querySelector('.about-you');
+var aboutYou = document.querySelector('.about-you');
 contact.addEventListener('change',function(event){
   var targetField = document.querySelector('.js-' + event.target.name);
   targetField.innerHTML = event.target.value;
