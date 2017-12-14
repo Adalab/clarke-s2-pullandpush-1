@@ -19,6 +19,7 @@ personalData.onchange = function(event) {
 
 
 // EXPERIENCE
+var hijoDelMal = document.querySelector('#satan');
 var jobExperience = document.querySelector('.job-experience');
 jobExperience.onchange = function(event) {
   var allJobs = document.querySelectorAll('.job-entry')
@@ -49,7 +50,7 @@ for (var i = 0; i < upButtonList.length; i++) {
     var clickedJob = event.target.parentElement;
     var previousJob = clickedJob.previousElementSibling;
     if (previousJob.className === 'job-entry') {
-      jobExperience.insertBefore(clickedJob, previousJob);
+      hijoDelMal.insertBefore(clickedJob, previousJob);
       jobExperience.onchange();
     }
   }
@@ -62,7 +63,7 @@ for (var i = 0; i < downButtonList.length; i++) {
     var clickedJob = event.target.parentElement;
     var nextJob = clickedJob.nextElementSibling;
     if (nextJob.className === 'job-entry') {
-      jobExperience.insertBefore(clickedJob, nextJob.nextSibling);
+      hijoDelMal.insertBefore(clickedJob, nextJob.nextSibling);
       jobExperience.onchange();
     }
   }
