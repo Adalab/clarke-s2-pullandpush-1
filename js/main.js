@@ -19,6 +19,7 @@ personalData.onchange = function(event) {
 
 
 // EXPERIENCE
+var hijoDelMal = document.querySelector('#satan');
 var jobExperience = document.querySelector('.job-experience');
 jobExperience.onchange = function(event) {
   var allJobs = document.querySelectorAll('.job-entry')
@@ -60,7 +61,7 @@ for (var i = 0; i < upButtonList.length; i++) {
     var clickedJob = event.target.parentElement;
     var previousJob = clickedJob.previousElementSibling;
     if (previousJob.className === 'job-entry') {
-      jobExperience.insertBefore(clickedJob, previousJob);
+      hijoDelMal.insertBefore(clickedJob, previousJob);
       jobExperience.onchange();
     }
   }
@@ -73,7 +74,7 @@ for (var i = 0; i < downButtonList.length; i++) {
     var clickedJob = event.target.parentElement;
     var nextJob = clickedJob.nextElementSibling;
     if (nextJob.className === 'job-entry') {
-      jobExperience.insertBefore(clickedJob, nextJob.nextSibling);
+      hijoDelMal.insertBefore(clickedJob, nextJob.nextSibling);
       jobExperience.onchange();
     }
   }
@@ -129,9 +130,30 @@ function showFieldset(event) {
 }
 
 // var editButton = document.querySelectorAll('.edit-button');
+
+
 for (var i = 0; i < fieldset.length; i++) {
   fieldset[i].addEventListener('click', showFieldset);
 };
+
+
+// botoncejo de imprimir e ir ready to the interviews
+var printButton = document.querySelector('#print-cv');
+function printCv () {
+var pdfCv = document.querySelector('.preview-a4');
+pdfCv.style.display = "block";
+var pdfView = pdfCv.innerHTML;
+//  a ver, se genera esta variable para que lo que salga en la pantalla una vez que cancele la impresión
+// se muestre guachi en la web
+var pdf = document.body.innerHTML;
+
+document.body.innerHTML = pdfView;
+window.print();
+// y esa variable que habíamos generado que parecía que
+document.body.innerHTML = pdf;
+
+}
+printButton.addEventListener('click', printCv);
 
 /*JAVASCRIPT MARÍA*/
 
