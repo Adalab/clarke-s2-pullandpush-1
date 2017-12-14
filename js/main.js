@@ -32,9 +32,20 @@ jobExperience.onchange = function(event) {
     var aReJob = reviewJobs[i].querySelector('.js-company');
     aReJob.innerHTML = aJob.value + ' |';
 
-    var aJob = '';
+    var aJob = allJobs[i].querySelectorAll('.selector-month');
     var aReJob = reviewJobs[i].querySelector('.js-jobdata');
-    aReJob.innerHTML = 'fecha';
+    aReJob.innerHTML = aJob.value;
+
+
+    // var allMonth= document.querySelectorAll('.selector-month');
+    // var reviewCalendar= document.querySelectorAll('.preview-job-set');
+    // for (var i = 0; i < allMonth.length; i++) {
+    //   var allSelectMonth= allMonth[i].querySelector('.js-jobdata');
+    //   allSelectMonth.innerHTML=
+    // }
+
+
+
 
     var aJob = allJobs[i].querySelector('.description-into');
     var aReJob = reviewJobs[i].querySelector('.js-explanation');
@@ -156,13 +167,3 @@ for (var i= firstYear; i >= currentYear; i--) {
   }
 
   // //Cuando el usuario elige el mes en la lista de meses, ese mes tiene que incluirse en el PDF
-  //
-  // var jobExperience= document.querySelectorAll('.job-experience');
-  // jobExperience.onchange= function(event) {
-  // var allMonth= document.querySelectorAll('.selector-month');
-  // var reviewCalendar= document.querySelectorAll('.preview-job-set');
-  // for (var i = 0; i < allMonth.length; i++) {
-  //   var allSelectMonth= allMonth[i].querySelector('.js-jobdata');
-  //   allSelectMonth.innerHTML=
-  // }
-  // }
