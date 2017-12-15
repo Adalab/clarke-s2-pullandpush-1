@@ -152,31 +152,6 @@ function calendarOptionsTo() {
   document.querySelector('.js-jobdata-to').innerHTML=' ' + monthTo + ' ' + yearTo;
 }
 
-var selectCalendarStudiesFrom = document.querySelector('.calendar-studies-from');
-selectCalendarStudiesFrom.addEventListener('change', calendarStudiesOptionsFrom);
-
-function calendarStudiesOptionsFrom() {
-  var monthStudiesFrom = document.querySelector('.month-from-studies').value;
-  var yearStudiesFrom = document.querySelector('.year-from-studies').value;
-  document.querySelector('.js-educationdate-from').innerHTML= ' ' + monthStudiesFrom + ' ' + yearStudiesFrom;
-
-  }
-
-  var selectCalendarStudiesTo = document.querySelector('.calendar-studies-to');
-  selectCalendarStudiesTo.addEventListener('change', calendarStudiesOptionsTo);
-
-  function calendarStudiesOptionsTo() {
-    var monthStudiesTo = document.querySelector('.month-to-studies').value;
-    var yearStudiesTo = document.querySelector('.year-to-studies').value;
-
-    document.querySelector('.js-educationdate-to').innerHTML=' ' + monthStudiesTo + ' ' + yearStudiesTo;
-  }
-
-
-
-
-
-
 
 //COLAPSABLES
 
