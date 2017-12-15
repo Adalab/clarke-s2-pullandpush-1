@@ -127,19 +127,23 @@ for (var i = 0; i < fieldset.length; i++) {
 
 // botoncejo de imprimir e ir ready to the interviews
 var printButton = document.querySelector('#print-cv');
+var newHead = document.querySelector('head');
 function printCv () {
-var pdfCv = document.querySelector('.preview-a4');
-pdfCv.style.display = "block";
-var pdfView = pdfCv.innerHTML;
-//  a ver, se genera esta variable para que lo que salga en la pantalla una vez que cancele la impresión
-// se muestre guachi en la web
-var pdf = document.body.innerHTML;
+  var title =document.title;
+  var pdfCv = document.querySelector('.preview-a4');
+  pdfCv.style.display = "block";
+  var newHead = document.head.innerHTML;
 
-document.body.innerHTML = pdfView;
-window.print();
-// y esa variable que habíamos generado que parecía que
-document.body.innerHTML = pdf;
+  var popupWin = window.open('', '', 'left=0,top=0,width=800,height=900');
+  popupWin.document.open();
+  popupWin.document.write(newHead);
+  popupWin.document.write(pdfCv.innerHTML);
+  popupWin.document.close();
 
+  popupWin.addEventListener('load', function() {
+  popupWin.print();//función que imprime el contenido
+  // popupWin.print(pdfCv.innerHTML);
+});
 }
 printButton.addEventListener('click', printCv);
 
