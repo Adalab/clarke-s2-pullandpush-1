@@ -14,9 +14,10 @@
       <input class="eye-logo" type="image" name="" value="" src="images/eye.svg"  alt="previsualizacion" onclick="">
       <input class="eye-logo hidden " type="image" name="" value="" src="images/eye-off.svg"  alt="cerrar previsualizacion">
     </div>
-</header>
+  </header>
 
 
+<<<<<<< HEAD
 <main>
   <section class="WhatIsThis">
     <h1 class="title">Resume Maker</h1>
@@ -155,32 +156,46 @@
         <button class="down" type="button" name="down">▼</button>
         <button class="delete" type="button" name="Delete">Borrar</button>
       </div>
+=======
+  <main>
+    <section class="WhatIsThis">
+      <h1 class="title">Resume Maker</h1>
+      <p>
+        Si estás buscando trabajo, ¡te ayudamos! Sorprende en tu próxima entrevista con este diseño de CV. Haz click en cada uno de los campos y rellena los datos. Para ver cómo está quedando, pulsa el ojito que encontrarás en la esquina superior derecha. Cuando hayas terminado, dale al botón de imprimir. ¡Te deseamos toda la suerte del mundo en la búsqueda de empleo!
+      </p>
+    </section>
+>>>>>>> 08430f3398bc1ef628d5efcae7864f360bdfbbc2
 
+    <form class="form-section" action="index.html" method="post">
 
-      <div class="job-entry">
-        <h2 class="form-title2">Trabajo 2</h2>
-        <label class="sr-only" for="position-1">Puesto</label>
-        <input class="position" id="position-2" type="text" name="position-2" placeholder="Puesto">
-        <label class="sr-only" for="company-2">Empresa</label>
-        <input class="company" id="company-2" type="text" name="company-2" placeholder="Empresa">
+      <fieldset class="personal-data">
+        <legend data-id="0" class="form-title">datos personales</legend>
 
-        <textarea class="description-into" name="description-into-2" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
+        <div  class="tab hidden">
 
-        <button class="up" type="button" name="up">▲</button>
-        <button class="down" type="button" name="down">▼</button>
-        <button class="delete" type="button" name="Delete">Borrar</button>
-      </div>
+          <label class="sr-only"for="name">nombre</label>
+          <input id="name" type="text" placeholder="nombre" name="name" value="">
 
+          <label class="sr-only"for="last-name">apellidos</label>
+          <input id="last-name" type="text" placeholder="apellidos" name="last-name" value="">
 
-      <div class="job-entry">
-        <h2 class="form-title2">Trabajo 3</h2>
-        <label class="sr-only" for="position-3">Puesto</label>
-        <input class="position" id="position-3" type="text" name="position-3" placeholder="Puesto">
-        <label class="sr-only" for="company-3">Empresa</label>
-        <input class="company" id="company-3" type="text" name="company-3" placeholder="Empresa">
+          <label class="sr-only"for="job">profesión</label>
+          <input id="job" type="text" placeholder="profesión" name="job" value="">
+        </div>
+      </fieldset>
 
-        <textarea class="description-into" name="description-into-3" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
+      <fieldset class="contact">
+        <legend data-id= "1" class="form-title">contacto</legend>
 
+        <div class="tab hidden">
+
+          <label class="sr-only"for="e-mail">e-mail</label>
+          <input id="e-mail" type="mail" placeholder="e-mail" name="e-mail" value="">
+
+          <label class="sr-only"for="telephone">teléfono</label>
+          <input id="telephone" type="tel" placeholder="teléfono" name="telephone" value="">
+
+<<<<<<< HEAD
         <button class="up" type="button" name="up">▲</button>
         <button class="down" type="button" name="down">▼</button>
         <button class="delete" type="button" name="Delete">Borrar</button>
@@ -239,196 +254,299 @@
             <option>2000</option>
 
           </select>
-        </div>
-
-        <div class="calendar">
-          <label for="month" class="from-to">Hasta</label>
-          <select id="month" name="month">
-            <option>enero</option>
-            <option>febrero</option>
-            <option>marzo</option>
-            <option>abril</option>
-            <option>mayo</option>
-            <option>junio</option>
-            <option>julio</option>
-            <option>agosto</option>
-            <option>septiembre</option>
-            <option>octubre</option>
-            <option>noviembre</option>
-            <option>diciembre</option>
-          </select>
-
-          <label for="year" class="from-to"></label>
-          <select id="year" name="year">
-            <option>2017</option>
-            <option>2016</option>
-            <option>2015</option>
-            <option>2014</option>
-            <option>2013</option>
-            <option>2012</option>
-            <option>2011</option>
-            <option>2010</option>
-            <option>2009</option>
-            <option>2008</option>
-            <option>2007</option>
-            <option>2006</option>
-            <option>2005</option>
-            <option>2004</option>
-            <option>2003</option>
-            <option>2002</option>
-            <option>2001</option>
-            <option>2000</option>
-          </select>
+=======
+>>>>>>> 08430f3398bc1ef628d5efcae7864f360bdfbbc2
         </div>
       </fieldset>
 
-        <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
+      <fieldset class="about-you">
+        <legend data-id="2" class="form-title">extracto</legend>
+        <div class="tab hidden">
 
+
+          <textarea name="about-you" rows="8" cols="" placeholder="Sobre ti"></textarea>
+        </div>
+      </fieldset>
+
+
+<<<<<<< HEAD
       <fieldset class="languages">
         <legend class="form-title">Idiomas</legend>
         <label class="sr-only" for="languages">Idioma</label>
         <input type="text" id="languages" name="languages" placeholder="Idioma 1">
+=======
+>>>>>>> 08430f3398bc1ef628d5efcae7864f360bdfbbc2
+
+      <fieldset class="job-experience">
+        <legend data-id= "3" class="form-title">Experiencia laboral</legend>
+        <div class="tab hidden" id="satan">
 
 
+          <div class="job-entry">
+            <h2 class="form-title2">Trabajo 1</h2>
+            <label class="sr-only" for="position-1">Puesto</label>
+            <input class="position" id="position-1" type="text" name="position-1" placeholder="Puesto">
+            <label class="sr-only" for="company-1">Empresa</label>
+            <input class="company" id="company-1" type="text" name="company-1" placeholder="Empresa">
 
-        <div class="languages-levels">
+            <div class="calendar-job-from">
+              <label for="selector-month" class="from-to">Desde</label>
+              <select class="month-from-job" id="selector-month" name="month"></select>
 
-          <label for="native">Nativo</label>
-          <input id="native" class="buttom-languages-levels" type="radio" name="native" placeholder="nativo">
+              <label for="selector-year" class="from-to"></label>
+              <select class="year-from-job" id="selector-year" name="year"></select>
+            </div>
 
-          <label for="professional">Profesional</label>
-          <input id="professional" class="buttom-languages-levels" type="radio" name="professional" placeholder="profesional">
+            <div class="calendar-job-to">
+              <label for="selector-month" class="from-to">Hasta</label>
+              <select class="month-to-job" id="selector-month" name="month">
 
-          <label for="medium">Medio</label>
-          <input id="medium" class="buttom-languages-levels" type="radio" name="medium" placeholder="medio">
+              </select>
 
-          <label for="basic">Básico</label>
-          <input id="basic" class="buttom-languages-levels" type="radio" name="basic" placeholder="básico">
+              <label for="selector-year" class="from-to"></label>
+              <select class="year-to-job" id="selector-year" name="year">
+              </select>
+            </div>
 
+            <textarea class="description-into" name="description-into-1" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
+
+            <button class="up" type="button" name="up">▲</button>
+            <button class="down" type="button" name="down">▼</button>
+            <button class="delete" type="button" name="Delete">Borrar</button>
+          </div>
+
+
+          <div class="job-entry">
+            <h2 class="form-title2">Trabajo 2</h2>
+            <label class="sr-only" for="position-2">Puesto</label>
+            <input class="position" id="position-2" type="text" name="position-2" placeholder="Puesto">
+            <label class="sr-only" for="company-2">Empresa</label>
+
+            <input class="company" id="company-2" type="text" name="company-2" placeholder="Empresa">
+
+            <textarea class="description-into" name="description-into-2" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
+
+            <button class="up" type="button" name="up">▲</button>
+            <button class="down" type="button" name="down">▼</button>
+            <button class="delete" type="button" name="Delete">Borrar</button>
+          </div>
+
+          <div class="job-entry">
+            <h2 class="form-title2">Trabajo 3</h2>
+            <label class="sr-only" for="position-3">Puesto</label>
+            <input class="position" id="position-3" type="text" name="position-3" placeholder="Puesto">
+            <label class="sr-only" for="company-3">Empresa</label>
+            <input class="company" id="company-3" type="text" name="company-3" placeholder="Empresa">
+
+            <textarea class="description-into" name="description-into-3" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
+
+            <button class="up" type="button" name="up">▲</button>
+            <button class="down" type="button" name="down">▼</button>
+            <button class="delete" type="button" name="Delete">Borrar</button>
+          </div>
         </div>
       </fieldset>
 
-    </form>
 
-  </main>
+      <!-- <fieldset>
+      <legend data-id="4" class="form-title">Estudios</legend>
+      <div class="tab hidden">
+
+
+      <label class="sr-only"for="degree">Licenciatura o grado</label>
+      <input id="degree" type="text" placeholder="Licenciatura/Grado" name="degree" value="">
+
+
+      <label class="sr-only"for="university">Universidad/Escuela</label>
+      <input id="university" type="text" placeholder="Universidad/Escuela" name="university" value="">
+
+      <textarea name="description" rows="8" cols="" placeholder="Descripción"></textarea>
+
+
+      <div class="calendar-studies-from">
+      <label for="selector-month" class="from-to">Desde</label>
+      <select class="month-from-studies" id="selector-month" name="month">
+
+    </select>
+
+    <label for="selector-year" class="from-to"></label>
+    <select class="year-from-studies" id="selector-year" name="year">
+
+
+  </select>
+</div>
+
+<div class="calendar-studies-to">
+<label for="selector-month" class="from-to">Hasta</label>
+<select class="month-to-studies" id="selector-month" name="month">
+
+</select>
+
+<label for="selector-year" class="from-to"></label>
+<select class="year-to-studies" id="selector-year" name="year">
+
+</select>
+</div>
+</div>
+</fieldset> -->
+
+
+<!-- <fieldset>
+<legend data-id="5" class="form-title">Idiomas</legend>
+<div class="tab hidden">
+
+
+<label class="sr-only" for="languages">Idioma</label>
+<input type="text" id="languages" name="languages" placeholder="Idioma 1">
+
+
+
+<div class="languages-levels">
+
+<label for="native">Nativo</label>
+<input id="native" class="buttom-languages-levels" type="radio" name="languages-levels" placeholder="nativo"/>
+
+<label for="professional">Profesional</label>
+<input id="professional" class="buttom-languages-levels" type="radio" name="languages-levels" placeholder="profesional"/>
+
+<label for="medium">Medio</label>
+<input id="medium" class="buttom-languages-levels" type="radio" name="languages-levels" placeholder="medio"/>
+
+<label for="basic">Básico</label>
+<input id="basic" class="buttom-languages-levels" type="radio" name="languages-levels" placeholder="básico"/>
+
+</div>
+</div>
+</fieldset> -->
+
+</form>
+</main>
 
 <!-- PREVIEW SECTION - DIANA -->
 
-  <aside class="preview">
-    <div class="preview-a4">
-      <div class="preview-content">
+<aside class="preview hidden">
+  <div class="preview-a4" id="cvView">
+    <div class="preview-content">
 
-        <div class="preview-header">
-          <h1 class="js-fullName">
-            <span class="js-name">Joan</span>&nbsp;<span class="js-last-name">Clarke</span>
-          </h1>
-          <p class="js-job">Front-end developer</p>
+      <div class="preview-header">
+        <h1 class="js-fullName">
+          <span class="js-name">Joan</span>&nbsp;<span class="js-last-name">Clarke</span>
+        </h1>
+        <p class="js-job">Front-end developer</p>
+      </div>
+
+      <span class="preview-colum">
+
+        <div class="preview-contact">
+          <h2 class="preview-title">Contacto</h2>
+          <div class="preview-set">
+            <p class="js-email">joan_clarke@adalab.es</p>
+            <p class="js-tel">666 666 666</p>
+          </div>
         </div>
 
-        <span class="preview-colum">
+        <!-- <hr class="line">
 
-          <div class="preview-contact">
-            <h2 class="preview-title">Contacto</h2>
-            <div class="preview-set">
-              <p class="js-email">joan_clarke@adalab.es</p>
-              <p class="js-tel">666 666 666</p>
-            </div>
-          </div>
+        <div class="preview-education">
+        <h2 class="preview-title">Estudios</h2>
+        <div class="preview-set">
+        <p class="js-degree">Titulo</p>
+        <p class="js-institution">Escuela</p>
+        <p class="js-educationdate-from">Mes - Ano</p>
+        <p class="js-educationdate-to">Mes - Ano</p>
 
-          <hr class="line">
-
-          <div class="preview-education">
-            <h2 class="preview-title">Estudios</h2>
-            <div class="preview-set">
-              <p class="js-degree">Titulo</p>
-              <p class="js-institution">Escuela</p>
-              <p class="js-educationdate">Año - Ano</p>
-            </div>
-
-            <div class="preview-set">
-              <p class="js-degree">Titulo</p>
-              <p class="js-institution">Univeridad</p>
-              <p class="js-educationdate">Año - Ano</p>
-            </div>
-          </div>
-
-          <hr class="line">
-
-          <div class="preview-languages">
-            <h2 class="preview-title">Idiomas</h2>
-
-            <div class="preview-set">
-              <p class="js-language">Idioma</p>
-              <p class="js-languagelvl">Nivel</p>
-            </div>
-
-            <div class="preview-set">
-              <p class="js-language">Idioma</p>
-              <p class="js-languagelvl">Nivel</p>
-            </div>
-
-            <div class="preview-set">
-              <p class="js-language">Idioma</p>
-              <p class="js-languagelvl">Nivel</p>
-            </div>
-          </div>
-
-        </span>
-
-        <span class="preview-colum">
-
-          <div class="preview-extract">
-            <h2 class="preview-title">Extracto</h2>
-            <p class="js-extract">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-
-          <hr class="line">
-
-          <div class="preview-jobs">
-            <h2 class="preview-title">Experiencia</h2>
-
-            <div class="preview-job-set">
-              <span class="js-company">Empresa |</span>
-              <span class="js-position">Puesto |</span>
-              <span class="js-jobdata">mes año - mes año</span>
-              <p class="js-explanation">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-
-            <div class="preview-job-set">
-              <span class="js-company">Empresa |</span>
-              <span class="js-position">Puesto |</span>
-              <span class="js-jobdata">mes año - mes año</span>
-              <p class="js-explanation">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-
-            <div class="preview-job-set">
-              <span class="js-company">Empresa |</span>
-              <span class="js-position">Puesto |</span>
-              <span class="js-jobdata">mes año - mes año</span>
-              <p class="js-explanation">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-
-          </div>
-        </span>
       </div>
+
+      <div class="preview-set">
+      <p class="js-degree">Titulo</p>
+      <p class="js-institution">Univeridad</p>
+      <p class="js-educationdate">Año - Ano</p>
     </div>
-  </aside>
+  </div>
 
-  <!--<div id="prueba"></div> -->
+  <hr class="line">
 
-  <footer class="footer-pullandpush">
-    <p class="thanks">Esta web ha sido psiblegracias a</p>
-    <a target="_blank" href="http://adalab.es/"><img class="adalab" src="images/adalab.png" alt="Adalab"></a>
-    <p class="atribution"><span>2017© pull&amp;push</span> frog company</p
-  </footer>
-  <script type="text/javascript" src="js/main.js"></script>
+  <div class="preview-languages">
+  <h2 class="preview-title">Idiomas</h2>
+
+  <div class="preview-set">
+  <p class="js-language">Idioma</p>
+  <p class="js-languagelvl">Nivel</p>
+</div>
+
+<div class="preview-set">
+<p class="js-language">Idioma</p>
+<p class="js-languagelvl">Nivel</p>
+</div>
+
+<div class="preview-set">
+<p class="js-language">Idioma</p>
+<p class="js-languagelvl">Nivel</p>
+</div>
+</div> -->
+
+</span>
+
+<span class="preview-colum">
+
+  <div class="preview-extract">
+    <h2 class="preview-title">Extracto</h2>
+    <p class="js-extract">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+  </div>
+
+  <hr class="line">
+
+  <div class="preview-jobs">
+    <h2 class="preview-title">Experiencia</h2>
+
+    <div class="preview-job-set">
+      <span class="js-company">Empresa |</span>
+      <span class="js-position">Puesto |</span>
+      <span class="js-jobdata-from">mes - año</span>
+      <span class="js-jobdata-to">mes - año</span>
+
+      <p class="js-explanation">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <div class="preview-job-set">
+      <span class="js-company">Empresa |</span>
+      <span class="js-position">Puesto |</span>
+      <span class="js-jobdata">mes año - mes año</span>
+      <p class="js-explanation">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+    <div class="preview-job-set">
+      <span class="js-company">Empresa |</span>
+      <span class="js-position">Puesto |</span>
+      <span class="js-jobdata">mes - año</span>
+      <span class="js-jobdata">mes - año</span>
+      <p class="js-explanation">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+
+  </div>
+</span>
+</div>
+
+</div>
+<button class="print" id="print-cv" type="button" name="print">Imprimir</button>
+</aside>
+
+<!--<div id="prueba"></div> -->
+
+<footer class="footer-pullandpush">
+  <p class="thanks">Esta web ha sido posible gracias a</p>
+  <a target="_blank" href="http://adalab.es/"><img class="adalab" src="images/adalab.png" alt="Adalab"></a>
+  <p class="atribution"><span>2017© pull&amp;push</span> frog company</p>
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
