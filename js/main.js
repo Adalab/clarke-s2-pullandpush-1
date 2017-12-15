@@ -152,7 +152,6 @@ function calendarOptionsTo() {
   document.querySelector('.js-jobdata-to').innerHTML=' ' + monthTo + ' ' + yearTo;
 }
 
-
 //COLAPSABLES
 
 function toggleInput(target){
