@@ -42,10 +42,10 @@
     <fieldset class="contact">
       <legend class="form-title">contacto</legend>
       <label class="sr-only"for="e-mail">e-mail</label>
-      <input id="e-mail" type="email" placeholder="e-mail" name="e-mail" value="">
+      <input id="e-mail" type="e-mail" placeholder="e-mail" name="email" value="">
 
       <label class="sr-only"for="telephone">teléfono</label>
-      <input id="telephone" type="tel" placeholder="teléfono" name="telephone" value="">
+      <input id="telephone" type="telephone" placeholder="teléfono" name="tel" value="">
 
 
     </fieldset>
@@ -53,7 +53,7 @@
     <fieldset class="about-you">
       <legend class="form-title">extracto</legend>
 
-      <textarea name="about-you" rows="8" cols="" placeholder="Sobre ti"></textarea>
+      <textarea name="extract" rows="8" cols="" placeholder="Sobre ti"></textarea>
 
     </fieldset>
 
@@ -188,14 +188,14 @@
     </fieldset>
 
 
-      <fieldset>
+      <fieldset class="studies">
         <legend class="form-title">Estudios</legend>
         <label class="sr-only"for="degree">Licenciatura o grado</label>
         <input id="degree" type="text" placeholder="Licenciatura/Grado" name="degree" value="">
 
 
         <label class="sr-only"for="university">Universidad/Escuela</label>
-        <input id="university" type="text" placeholder="Universidad/Escuela" name="university" value="">
+        <input id="university" type="text" placeholder="Universidad/Escuela" name="institution" value="">
 
         <textarea name="description" rows="8" cols="" placeholder="Descripción"></textarea>
 
@@ -284,7 +284,7 @@
 
         <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
 
-      <fieldset>
+      <fieldset class="languages">
         <legend class="form-title">Idiomas</legend>
         <label class="sr-only" for="languages">Idioma</label>
         <input type="text" id="languages" name="languages" placeholder="Idioma 1">
