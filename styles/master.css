@@ -44,6 +44,12 @@ header {
   height: 2.5em;
 }
 
+.pullandpush-logo {
+  width: 20%;
+  height: auto;
+  margin-left: 5%;
+}
+
 .eye {
   border-left: 1px solid white;
   padding-left: 1em;
@@ -69,6 +75,8 @@ header {
 }
 
 /*MAIN*/
+
+
 .WhatIsThis {
   padding-bottom: 15px;
   padding-left: 30px;
@@ -126,6 +134,10 @@ input {
   font-family: 'Open Sans', sans-serif;
 }
 
+/*.eye-logo {
+margin-right: 5%;
+-webkit-appearance: none;
+}*/
 
 .form-title {
   text-transform: uppercase;
@@ -154,12 +166,37 @@ input {
   color: #797979;
 }
 
-.calendar {
+.calendar-job-from {
   margin-top: 6px;
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-end;
 }
+
+.calendar-job-to {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calendar-studies-from {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calendar-studies-to {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
 
 .from-to {
   margin-right: 3px;
@@ -180,7 +217,6 @@ select {
   display: flex;
   flex-direction: row;
 }
-
 .buttom-languages-levels {
   border-bottom: 1px solid #a9a9a9;
   width: 100%;
@@ -333,6 +369,15 @@ select {
   font-size: 12px;
   font-weight: 500;
 }
+/*.logo-adalab {
+/*display: block;
+margin-left: auto;
+margin-right: auto;*/
+/*width: 33%;
+margin-left:33%;
+justify-content: center;
+
+}*/
 
 .adalab {
   height: 4em;

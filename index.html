@@ -21,7 +21,7 @@
     <section class="WhatIsThis">
       <h1 class="title">Resume Maker</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Si estás buscando trabajo, ¡te ayudamos! Sorprende en tu próxima entrevista con este diseño de CV. Haz click en cada uno de los campos y rellena los datos. Para ver cómo está quedando, pulsa el ojito que encontrarás en la esquina superior derecha. Cuando hayas terminado, dale al botón de imprimir. ¡Te deseamos toda la suerte del mundo en la búsqueda de empleo!
       </p>
     </section>
 
@@ -80,26 +80,22 @@
             <label class="sr-only" for="company-1">Empresa</label>
             <input class="company" id="company-1" type="text" name="company-1" placeholder="Empresa">
 
-            <div class="calendar">
-              <label for="month" class="from-to">Desde</label>
-              <select id="month" class="selector-month" name="month">
+            <div class="calendar-job-from">
+              <label for="selector-month" class="from-to">Desde</label>
+              <select class="month-from-job" id="selector-month" name="month"></select>
 
-              </select>
-
-              <label for="year" class="from-to"></label>
-              <select id="year" class="selector-year" name="year">
-
-              </select>
+              <label for="selector-year" class="from-to"></label>
+              <select class="year-from-job" id="selector-year" name="year"></select>
             </div>
 
-            <div class="calendar">
-              <label for="month" class="from-to">Hasta</label>
-              <select id="month" class="selector-month" name="month">
+            <div class="calendar-job-to">
+              <label for="selector-month" class="from-to">Hasta</label>
+              <select class="month-to-job" id="selector-month" name="month">
 
               </select>
 
-              <label for="year" class="from-to"></label>
-              <select id="year" class="selector-year" name="year">
+              <label for="selector-year" class="from-to"></label>
+              <select class="year-to-job" id="selector-year" name="year">
               </select>
             </div>
 
@@ -116,6 +112,7 @@
             <label class="sr-only" for="position-2">Puesto</label>
             <input class="position" id="position-2" type="text" name="position-2" placeholder="Puesto">
             <label class="sr-only" for="company-2">Empresa</label>
+            
             <input class="company" id="company-2" type="text" name="company-2" placeholder="Empresa">
 
             <textarea class="description-into" name="description-into-2" rows="8" cols="80" placeholder="Descripción del puesto"></textarea>
@@ -157,34 +154,33 @@
           <textarea name="description" rows="8" cols="" placeholder="Descripción"></textarea>
 
 
-          <div class="calendar">
-            <label for="month" class="from-to">Desde</label>
-            <select id="month" class="selector-month" name="month">
+          <div class="calendar-studies-from">
+            <label for="selector-month" class="from-to">Desde</label>
+            <select class="month-from-studies" id="selector-month" name="month">
 
             </select>
 
-            <label for="year" class="from-to"></label>
-            <select id="year" class="selector-year" name="year">
+            <label for="selector-year" class="from-to"></label>
+            <select class="year-from-studies" id="selector-year" name="year">
 
 
             </select>
           </div>
 
-          <div class="calendar">
-            <label for="month" class="from-to">Hasta</label>
-            <select id="month" class="selector-month" name="month">
+          <div class="calendar-studies-to">
+            <label for="selector-month" class="from-to">Hasta</label>
+            <select class="month-to-studies" id="selector-month" name="month">
 
             </select>
 
-            <label for="year" class="from-to"></label>
-            <select id="year" class="selector-year" name="year">
+            <label for="selector-year" class="from-to"></label>
+            <select class="year-to-studies" id="selector-year" name="year">
 
             </select>
           </div>
         </div>
       </fieldset>
 
-      <!--María: Las labels de radio no llevan texto ni placeholder, ¿cómo pongo el sr-only?-->
 
       <fieldset>
         <legend data-id="5" class="form-title">Idiomas</legend>
@@ -247,7 +243,9 @@
             <div class="preview-set">
               <p class="js-degree">Titulo</p>
               <p class="js-institution">Escuela</p>
-              <p class="js-educationdate">Año - Ano</p>
+              <p class="js-educationdate-from">Mes - Ano</p>
+              <p class="js-educationdate-to">Mes - Ano</p>
+
             </div>
 
             <div class="preview-set">
@@ -297,7 +295,9 @@
             <div class="preview-job-set">
               <span class="js-company">Empresa |</span>
               <span class="js-position">Puesto |</span>
-              <span class="js-jobdata">mes año - mes año</span>
+              <span class="js-jobdata-from">mes - año</span>
+              <span class="js-jobdata-to">mes - año</span>
+
               <p class="js-explanation">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
@@ -315,7 +315,10 @@
             <div class="preview-job-set">
               <span class="js-company">Empresa |</span>
               <span class="js-position">Puesto |</span>
-              <span class="js-jobdata">mes año - mes año</span>
+              <!-- <div class="preview-job-calendar"> -->
+              <span class="js-jobdata">mes - año</span>
+              <span class="js-jobdata">mes - año</span>
+              <!-- </div> -->
               <p class="js-explanation">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
