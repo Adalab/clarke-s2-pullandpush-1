@@ -17,7 +17,23 @@ personalData.onchange = function(event) {
   targetField.innerHTML = event.target.value;
 };
 
+// CONTACT-IRENE
+var contact = document.querySelector('.contact');
+contact.addEventListener('change',function(event){
+  console.log(event);
 
+  var targetField = document.querySelector('.js-' + event.target.name);
+  targetField.innerHTML = event.target.value;
+});
+
+
+//ABOUT-YOU
+
+var aboutYou = document.querySelector('.about-you');
+aboutYou.addEventListener('change',function(event){
+  var targetField = document.querySelector('.js-extract');
+  targetField.innerHTML = event.target.value;
+});
 
 // EXPERIENCE
 var hijoDelMal = document.querySelector('#satan');
@@ -52,6 +68,12 @@ jobExperience.onchange = function(event) {
   // }
 }
 }
+var education = document.querySelector('.studies');
+education.addEventListener('change',function(event) {
+
+  var targetField = document.querySelector('.js-' + event.target.name);
+  targetField.innerHTML = event.target.value;
+});
 
 
 //mover arriba
@@ -152,6 +174,8 @@ function calendarOptionsTo() {
   document.querySelector('.js-jobdata-to').innerHTML=' ' + monthTo + ' ' + yearTo;
 }
 
+
+
 //COLAPSABLES
 
 function toggleInput(target){
@@ -162,6 +186,7 @@ function toggleInput(target){
   target.classList.add('hidden');
   // aside.classList.add('hidden');
 }
+
  //
  // con este evento se activa o desactiva el ojo
 var toggle = function(){
