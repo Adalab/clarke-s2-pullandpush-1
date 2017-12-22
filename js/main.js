@@ -12,10 +12,22 @@ document.onsubmit = function(event) {
 
 // PERSONAL DATA
 var personalData = document.querySelector('.personal-data');
-personalData.onchange = function(event) {
+// personalData.onchange = function(event) {
+personalData.addEventListener('change',function(event){
   var targetField = document.querySelector('.js-' + event.target.name);
   targetField.innerHTML = event.target.value;
-};
+});
+
+// CONTACT-IRENE
+var contact = document.querySelector('.contact');
+contact.addEventListener('change',function(event){
+  console.log(event);
+
+  var targetField = document.querySelector('.js-' + event.target.name);
+  targetField.innerHTML = event.target.value;
+});
+
+
 
 // CONTACT-IRENE
 var contact = document.querySelector('.contact');
@@ -28,6 +40,7 @@ contact.addEventListener('change',function(event){
 
 
 //ABOUT-YOU
+
 
 var aboutYou = document.querySelector('.about-you');
 aboutYou.addEventListener('change',function(event){
@@ -65,6 +78,7 @@ jobExperience.onchange = function(event) {
     var aJob = allJobs[i].querySelector('.description-into');
     var aReJob = reviewJobs[i].querySelector('.js-explanation');
     aReJob.innerHTML = aJob.value;
+
   // }
 }
 }
@@ -75,6 +89,17 @@ education.addEventListener('change',function(event) {
   targetField.innerHTML = event.target.value;
 });
 
+//   }
+// };
+//EDUCATION
+
+
+var education = document.querySelector('.studies');
+education.addEventListener('change',function(event) {
+console.log(event);
+  var targetField = document.querySelector('.js-' +event.target.name);
+  targetField.innerHTML = event.target.value;
+});
 
 //mover arriba
 var upButtonList = document.querySelectorAll('.up');
